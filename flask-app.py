@@ -12,7 +12,7 @@ hello = 'hello world!'
 
 @app.route('/hello', methods=['GET'])
 def get_hello():
-	return jsonify(body=hello)
+	return jsonify(body=hellotest)
 
 @app.errorhandler(500)
 def handle_500(error):
