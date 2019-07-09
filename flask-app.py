@@ -8,7 +8,7 @@ from flask import Flask, Response, jsonify
 app = Flask(__name__)
 #setup_metrics(app)
 
-hello = 'hello world! test'
+hello = 'hello world!'
 
 @app.route('/hello', methods=['GET'])
 def get_hello():
