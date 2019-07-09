@@ -8,11 +8,11 @@ from flask import Flask, Response, jsonify
 app = Flask(__name__)
 #setup_metrics(app)
 
-hello = 'hello world!'
+hello = 'hello world test!'
 
 @app.route('/hello', methods=['GET'])
 def get_hello():
-	return jsonify(body=hellotest)
+	return jsonify(body=hello)
 
 @app.errorhandler(500)
 def handle_500(error):
